@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24-Jun-2021, 3:08:08 pm by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.wipro.training.hibernatedemo.Product" table="PRODUCT">
+        <id name="id" type="long">
+            <column name="PRODUCTID" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="PNAME" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+        <property name="price" type="float">
+            <column name="PRICE" />
+        </property>
+    </class>
+</hibernate-mapping>
